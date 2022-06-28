@@ -32,8 +32,6 @@ apt-get install -y \
   php-curl \
   php-bcmath
 
-sudo apt-get install apache2 mariadb-server php php-mysql libapache2-mod-php php-xml php-mbstring
-
 apt-get clean
 
 # stop apache
