@@ -5,16 +5,16 @@ COPY ./config/apache2.conf /config
 COPY ./config/php.ini /config
 COPY ./config/.htaccess /config
 
-# sctipts
-COPY ./sctipts/build.sh /sctipts
-COPY ./sctipts/package-install.sh /sctipts
-COPY ./sctipts/download_mediawiki.sh /sctipts
-COPY ./sctipts/Load_apache_modules.sh /sctipts
-COPY ./sctipts/change_config.sh /sctipts
-COPY ./sctipts/run.sh /sctipts
+# scripts
+COPY ./scripts/build.sh /scripts
+COPY ./scripts/package-install.sh /scripts
+COPY ./scripts/download_mediawiki.sh /scripts
+COPY ./scripts/Load_apache_modules.sh /scripts
+COPY ./scripts/change_config.sh /scripts
+COPY ./scripts/run.sh /scripts
 
 ENV TZ=Asia/Tokyo
-RUN sh ./sctipts/build.sh
+RUN sh ./scripts/build.sh
 RUN chmod +x /scrtipts/run.sh
 
 ENTRYPOINT [ "/scripts/run.sh" ]
