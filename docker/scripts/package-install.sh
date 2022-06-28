@@ -15,6 +15,7 @@ apt-get install -y \
   net-tools \
   iputils-ping \
   curl \
+  wget \
   git \
   nano \
   unzip \
