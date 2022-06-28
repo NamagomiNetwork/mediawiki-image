@@ -10,7 +10,7 @@ jobs:
   namagomi-velocity-build-and-push:
     runs-on: ubuntu-latest
     env:
-      VERSION: 2022.6.8-mediawiki1.38.1
+      VERSION: 2022.6.9-mediawiki1.38.1
       IMAGE_NAME: mediawiki
       TEAM: namagominetwork
 
