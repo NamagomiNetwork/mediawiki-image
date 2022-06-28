@@ -1,0 +1,10 @@
+## https://www.mediawiki.org/wiki/Manual:Short_URL/Apache
+
+# 書き換えエンジンを有効化
+RewriteEngine On
+
+# ウィキページへの短いURL
+RewriteRule ^/?wiki(/.*)?$ %{DOCUMENT_ROOT}/w/index.php [L]
+
+# / へのアクセスをメインページにリダイレクト
+RewriteRule ^/*$ %{DOCUMENT_ROOT}/w/index.php [L]
