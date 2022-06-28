@@ -15,6 +15,6 @@ COPY ./scripts/run.sh /scripts/run.sh
 
 ENV TZ=Asia/Tokyo
 RUN sh /scripts/build.sh
-RUN chmod +x /scrtipts/run.sh
+RUN chmod +x /scripts/run.sh
 
 ENTRYPOINT [ "/scripts/run.sh" ]
