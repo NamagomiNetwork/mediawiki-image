@@ -14,7 +14,7 @@ COPY ./scripts/change_config.sh /scripts
 COPY ./scripts/run.sh /scripts
 
 ENV TZ=Asia/Tokyo
-RUN sh ./scripts/build.sh
+RUN sh /scripts/build.sh
 RUN chmod +x /scrtipts/run.sh
 
 ENTRYPOINT [ "/scripts/run.sh" ]
