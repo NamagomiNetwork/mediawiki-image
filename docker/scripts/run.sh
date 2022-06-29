@@ -2,11 +2,9 @@
 
 set -e
 
+sh /scripts/download_mediawiki.sh
 apache2ctl start
 
-# なんかクラッシュループしてそうだから回避用
+# ログを表示
 
-while true
-do
-  sleep 1
-done
+tail -f /var/log/apache2/access.log
