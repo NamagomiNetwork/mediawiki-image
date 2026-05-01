@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:26.04
 
 # config
 COPY ./config/apache2.conf /config/apache2.conf 
